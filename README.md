@@ -1,62 +1,55 @@
- JavaFX Student Management System
-This is a JavaFX desktop application for managing student records. It supports login functionality and full CRUD (Create, Read, Update, Delete) operations using a MySQL database. The project is part of a programming test and is implemented with proper MVC structure and manual ORM techniques.
-Developer Information
+HRManagementApp
+A simple JavaFX application for managing employee records with login authentication and CRUD (Create, Read, Update, Delete) operations connected to a MySQL database.
 
-Test Instructions Mapping
- Section A: Scene Creation 
+Features
+Login Page with email and password authentication.
 
-- Developed two separate scenes using JavaFX:
-  - Login Scene – accepts username and password from the user.
-  - CRUD Scene – displays a `TableView` and forms to add, update, or delete student records.
-- Layouts used: `VBox`, `HBox`, `GridPane`, and `BorderPane`.
-- Navigation between scenes handled through event actions.
+Employee Management:
 
-Section B: Database Design 
+View all employees in a table.
 
-- Database Name:`student`
-- Tables:
-  - `users` – stores login credentials (`id`, `username`, `password`)
-  - `students` – stores student records (`id`, `name`, `email`, `age`)
-- MySQL screenshots of:
-  - Designer View of tables
-  - Sample data in table
-- Stored in `screenshots/database/` folder.
+Add new employees.
 
-Section C: Controller and View Implementation (160 Marks)
+Update existing employee details.
 
-- Controllers handle user interaction logic:
-  - Login validation
-  - Fetching, inserting, updating, deleting student records
-- Views are built using JavaFX components and maintain a user-friendly structure.
-- Bindings and event handlers are set for smooth data flow between model and UI.
+Delete employees.
 
-Section D: Perform Login & CRUD Operation (400 Marks)
+Seamless integration between JavaFX UI and MySQL database.
 
-- Login credentials are validated from the `users` table.
-- Full CRUD operations implemented:
-  - Create – Add new student via form inputs
-  - Read – Display student data in a `TableView`
-  - Update – Modify selected student's details
-  - Delete – Remove selected student
-- Database connection handled using **JDBC**.
+Uses JavaFX properties and bindings for responsive UI updates.
 
-Section E: Data Modelling (120 Marks)
+Clean separation of concerns with controller classes managing database interactions.
 
-- Created a `Student.java` class to represent the `students` table.
-- Class includes:
-  - Fields: `id`, `name`, `email`, `age`
-  - Constructors, getters, and setters
-- Used as an ORM-like model to map data between the application and database.
+Technologies Used
+Java 21 (OpenJDK)
 
-Requirements
+JavaFX 21
 
-- Java JDK 17+
-- JavaFX SDK (21+)
-- MySQL Server
-- VS Code or IntelliJ
-  Note: Since the code is a bit difficult for me. I researched a lot from websites like W3schools and Chatgpt to make the best version of my code. For some of the portion I took help from my classmate Nimesh and Suman.
-Name:Niraj Bhandari  
-Student ID: 23093760  
-Email: bhandariniraj081@gmail.com  
-Date of Submission: 3rd July 2025  
+MySQL 8+
 
+JDBC for database connectivity
+
+Project Structure
+HRManagementApp.java - Main application with JavaFX UI and controller logic.
+
+Employee.java - Data model representing employee records.
+
+EmployeeController.java - Handles all database operations related to employees.
+
+README.md - This documentation file.
+
+Usage
+On launch, enter your login credentials (e.g., admin@example.com / admin123).
+
+After successful login, manage employees using the CRUD interface.
+
+Screenshots
+(Add your screenshots here with your name, student ID, and date.)
+
+Note: Some Code has been taken through Ai. I have also used websites like W3schools for my research.
+
+Author
+Your Name
+Student ID: 23093760
+Email: bhandariniraj081@gmail.com
+Date: 2025-07-10
